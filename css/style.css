@@ -56,8 +56,8 @@
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 4vw;
-    grid-row-gap: 4vh;
+    column-gap: 4vw;
+    row-gap: 4vh;
     margin: 0 auto;
     width: 80%;
 }
@@ -70,9 +70,28 @@
     background-color: rgb(23, 99, 112);
     box-shadow: 0px 3px 8px 0px rgb(151, 151, 151);
     transition: 0.4s;
+    perspective: 200px;
 }
 
 .boxes:hover {
     transform: translateY(-16px);
-    box-shadow: 0px 6px 16px 0px rgb(151, 151, 151);
+    box-shadow: 0px 6px 20px 0px rgb(133, 133, 133);
+}
+
+@media screen and (max-width: 768px) {
+    #main-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .boxes {
+        width: 54vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .boxes {
+        width: 28vw;
+    }
 }
