@@ -1,50 +1,37 @@
 * {
     margin: 0;
-    margin-top: 2vh;
     padding: 0;
     font-family: sans-serif;
 }
 
+*::selection {
+    background-color: rgb(219, 219, 219);
+}
+
 #nav-bar {
-    height: 8vh;
-    background-color: rgb(151, 151, 151);
+    height: 80px;
+    line-height: 80px;
 }
 
 #nav-bar ul {
     display: inline-flex;
     float: right;
-    margin-top: 24px;
 }
 
 #nav-bar ul li {
     list-style-type: none;
     margin-right: 40px;
-    padding: 6px;
-    border-radius: 6px;
-    transition: 0.1s;
-}
-
-#nav-bar ul li:hover {
-    background-color: rgb(230, 230, 230);
 }
 
 #nav-bar ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(25, 109, 219);
     font-weight: bold;
+    transition: 0.1s;
 }
 
-#login-btn {
-    margin-left: 40px;
-}
-
-#login-btn a {
-    color: red;
-}
-
-#vl {
-    background-color: rgb(200, 200, 200);
-    width: 1px;
+#nav-bar ul li a:hover {
+    color: rgb(0, 140, 255);
 }
 
 #container {
@@ -53,6 +40,7 @@
 }
 
 #main-container {
+    padding: 50px;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -67,15 +55,15 @@
     border-radius: 10px;
     height: 30vh;
     width: 14vw;
-    background-color: rgb(23, 99, 112);
-    box-shadow: 0px 3px 8px 0px rgb(151, 151, 151);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 12px 0px rgb(199, 199, 199);
     transition: 0.4s;
     perspective: 200px;
 }
 
 .boxes:hover {
     transform: translateY(-16px);
-    box-shadow: 0px 6px 20px 0px rgb(133, 133, 133);
+    box-shadow: 0px 6px 20px 0px rgb(199, 199, 199);
 }
 
 @media screen and (max-width: 768px) {
@@ -94,4 +82,87 @@
     .boxes {
         width: 28vw;
     }
+}
+
+#signup-btn, #signup-btn:link, #signup-btn:visited {
+    white-space: nowrap;
+    color: white;
+    background-color: rgb(25, 109, 219);
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#signup-btn:hover {
+    background-color: rgb(255, 135, 23);
+}
+
+#login-btn, #login-btn:link, #login-btn:visited {
+    margin-left: 40px;
+    color: white;
+    background-color: rgb(25, 109, 219);
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#login-btn:hover {
+    background-color: rgb(255, 135, 23);
+}
+
+
+#frontPage {
+    padding-left: 10vw;
+    height: 92vh;
+    margin-top: 6vh;
+}
+
+#frontPageDescription {
+    margin-top: 24px;
+    width: 30vw;
+    color: rgb(143, 166, 194);
+    margin-bottom: 30px;
+}
+
+#frontPageBtnContainer {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+
+#frontPageBtn {
+    background-color: rgb(25, 109, 219);
+    border-radius: 12px;
+    color: white;
+    padding: 20px 30px;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+#frontPageBtn:hover {
+    background-color: rgb(255, 135, 23);
+}
+
+#title {
+    font-size: 60px;
+    color: rgb(25, 109, 219);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
