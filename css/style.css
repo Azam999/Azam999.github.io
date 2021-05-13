@@ -9,11 +9,11 @@
 }
 
 #nav-bar {
-    height: 80px;
-    line-height: 80px;
+    height: 26px;
 }
 
 #nav-bar ul {
+    margin-top: 30px;
     display: inline-flex;
     float: right;
 }
@@ -27,11 +27,7 @@
     text-decoration: none;
     color: rgb(25, 109, 219);
     font-weight: bold;
-    transition: 0.1s;
-}
-
-#nav-bar ul li a:hover {
-    color: rgb(0, 140, 255);
+    transition: 0.2s;
 }
 
 #container {
@@ -51,14 +47,20 @@
 }
 
 .boxes {
-    padding: 40px;
     border-radius: 10px;
-    height: 30vh;
-    width: 14vw;
+    height: 40vh;
+    width: 16vw;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 3px 12px 0px rgb(199, 199, 199);
     transition: 0.4s;
     perspective: 200px;
+}
+
+.boxes-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .boxes:hover {
@@ -112,16 +114,26 @@
 
 
 #frontPage {
-    padding-left: 10vw;
+    width: 60vw;
+    margin: 0 auto;
     height: 92vh;
-    margin-top: 6vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #frontPageDescription {
     margin-top: 24px;
-    width: 30vw;
-    color: rgb(143, 166, 194);
+    color: rgb(50, 50, 50);
     margin-bottom: 30px;
+}
+
+#frontPageDescription h3 {
+    font-weight: 100;
+}
+
+#iphoneImg {
+    width: 500px;
 }
 
 #frontPageBtnContainer {
@@ -147,6 +159,8 @@
 }
 
 #title {
+    margin-top: 100px;
+    font-weight: 100;
     font-size: 60px;
     color: rgb(25, 109, 219);
 }
@@ -165,4 +179,19 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+footer {
+    background-color: rgb(40, 40, 40);
+    height: 260px;
+    color: rgb(210, 210, 210);
+    padding: 0 10vw;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 200px;
+    width: 70vw;
+    padding: 30px;
 }
