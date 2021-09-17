@@ -1,3 +1,3 @@
-# Azam999.github.io
+# Azam999.github.io (<http://azamahmed.tech>)
 
-[Personal website](http://azamahmed.tech)
+[Link](http://azamahmed.tech)
