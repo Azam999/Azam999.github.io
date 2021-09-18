@@ -25,6 +25,15 @@
     #description {
       font-size: 20px;
     }
+
+    #langs {
+      display: flex;
+      flex-direction: row;
+      
+      .lang-logo {
+        width: 80px;
+      }
+    }
   }
 
   #photo {

@@ -23,6 +23,13 @@
 #main-start #info #description {
   font-size: 20px;
 }
+#main-start #info #langs {
+  display: flex;
+  flex-direction: row;
+}
+#main-start #info #langs .lang-logo {
+  width: 80px;
+}
 #main-start #photo {
   background-color: black;
   border-radius: 50%;
