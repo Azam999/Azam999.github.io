@@ -1,26 +1,20 @@
 #main-start {
   background-color: rgb(30, 169, 255);
   display: block;
-  width: 100vw;
+  max-width: 100%;
   height: 50vh;
-  transition: 1s;
+  transition: 0.5s;
 
   &:hover {
     background-color: rgb(19, 141, 216);
   }
 
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 50vh;
   }
 
   #info {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    justify-content: center;
+    
 
     #description {
       font-size: 20px;
@@ -29,9 +23,9 @@
     #langs {
       display: flex;
       flex-direction: row;
-      
+
       .lang-logo {
-        width: 80px;
+        width: 70px;
       }
     }
   }
@@ -40,7 +34,18 @@
     background-color: black;
     border-radius: 50%;
     border: solid 10px lightgreen;
-    width: 350px;
-    height: 350px;
+    width: 30vh;
+    height: 30vh;
+  }
+}
+
+
+@media only screen and (max-width: 992px), screen and (max-height: 600px) {
+  #main-start {
+    height: 100vh;
+
+    .container {
+      height: 100vh;
+    }
   }
 }
