@@ -1,0 +1,34 @@
+#main-start {
+  background-color: #1ea9ff;
+  display: block;
+  width: 100vw;
+  height: 50vh;
+  transition: 1s;
+}
+#main-start:hover {
+  background-color: #138dd8;
+}
+#main-start .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+}
+#main-start #info {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  justify-content: center;
+}
+#main-start #info #description {
+  font-size: 20px;
+}
+#main-start #photo {
+  background-color: black;
+  border-radius: 50%;
+  border: solid 10px lightgreen;
+  width: 350px;
+  height: 350px;
+}
+
+/*# sourceMappingURL=main.css.map */
