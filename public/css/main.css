@@ -10,6 +10,7 @@
 .navbar-default .nav-item {
   margin-right: 12px;
   border-radius: 10%;
+  padding: 0px 10px;
   color: black;
   transition: 0.3s;
 }
@@ -76,6 +77,14 @@
 
   #photo {
     margin-bottom: 40px;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .navbar-nav .nav-item {
+    border-radius: 0% !important;
+    padding-left: 10px;
   }
 }
 @media only screen and (max-height: 600px) {
