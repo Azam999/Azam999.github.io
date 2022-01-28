@@ -7,68 +7,96 @@
     <title>Azam Ahmed</title>
     <link rel="stylesheet" href="public/css/main.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-default navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Azam Ahmed</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://github.com/Azam999"
-                target="_blank"
-                >Github</a
-              >
-            </li>
-          </ul>
+    <div id="main-start" class="p-4">
+      <div id="top">
+        <h1 id="name">Azam Ahmed</h1>
+        <h2 id="title">Developer in High School</h2>
+      </div>
+
+      <div
+        class="
+          d-flex
+          justify-content-center justify-content-around
+          align-items-center
+        "
+      >
+        <div>
+          <a
+            href="https://www.linkedin.com/in/azam-ahmed-5185b7226/"
+            target="_blank"
+          >
+            <img src="https://img.icons8.com/ios/96/000000/linkedin.png" />
+          </a>
+          <a href="https://twitter.com/Azam_Ahmed999" target="_blank">
+            <img src="https://img.icons8.com/ios/96/000000/twitter.png" />
+          </a>
+          <a href="https://github.com/azam999" target="_blank">
+            <img src="https://img.icons8.com/ios/96/000000/github.png" />
+          </a>
+          <img
+            src="https://img.icons8.com/ios/96/000000/discord.png"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-html="true"
+            title="Azam999#8069"
+          />
+          <a href="mailto:aziskool20@gmail.com" target="_blank">
+            <img src="https://img.icons8.com/ios/96/000000/mail.png" />
+          </a>
+        </div>
+        <div id="photoContainer" class="mt-5">
+          <img id="photo" src="img/azam.jpeg" />
+        </div>
+        <div id="langs">
+          <img
+            class="lang-logo"
+            src="https://img.icons8.com/color/96/000000/javascript--v2.png"
+          />
+          <img
+            class="lang-logo"
+            src="https://img.icons8.com/color/96/000000/typescript.png"
+          />
+          <img
+            class="lang-logo"
+            src="https://img.icons8.com/color/96/000000/python--v1.png"
+          />
+          <img
+            class="lang-logo"
+            src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png"
+          />
+          <img
+            class="lang-logo"
+            src="https://img.icons8.com/color/96/000000/flutter.png"
+          />
         </div>
       </div>
-    </nav>
 
-    <div id="main-start">
-      <div class="container d-flex align-items-center justify-content-lg-between justify-content-center flex-lg-row flex-column">
+      <script>
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      </script>
+
+      <!-- <div class="container d-flex align-items-center justify-content-lg-between justify-content-center flex-lg-row flex-column">
         <div id="photoContainer" >
           <img id="photo" src="img/azam.jpeg" />
         </div>
         <div id="info" class="d-flex flex-column align-items-center justify-content-center">
-          <h1 class="display-4" id="name">Azam Ahmed</h1>
           <p id="description">I'm a high school student and an avid programmer. I know JavaScript, TypeScript, Java, Python</p>
           <div id="langs">
             <img
@@ -88,8 +116,19 @@
               src="https://img.icons8.com/color/240/000000/java-coffee-cup-logo--v1.png"
             />
           </div>
+          <div class="mt-2" id="socials">
+            <a href="https://www.linkedin.com/in/azam-ahmed-5185b7226/" target="_blank" class="social-logo">
+              <img src="https://img.icons8.com/ios/50/000000/linkedin.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/azam-ahmed-5185b7226/" target="_blank" class="social-logo">
+              <img src="https://img.icons8.com/ios/50/000000/twitter.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/azam-ahmed-5185b7226/" target="_blank" class="social-logo">
+              <img src="https://img.icons8.com/ios/50/000000/twitter.png"/>
+            </a>
+          </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
