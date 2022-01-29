@@ -61,7 +61,6 @@ $background-color: rgb(30, 169, 255);
 
 footer {
   font-family: monospace;
-  height: 70px;
 }
 
 ::-webkit-scrollbar {
@@ -98,4 +97,18 @@ footer {
 
 @media only screen and (max-width: 1140px) {
   @include responsive;
+
+  #start {
+    flex-direction: column;
+
+    .social-logo {
+      margin-top: 20px;
+      width: 70px;
+    }
+
+    .lang-logo {
+      margin-top: 40px;
+      width: 70px;
+    }
+  }
 }

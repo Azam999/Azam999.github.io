@@ -48,7 +48,6 @@
 
 footer {
   font-family: monospace;
-  height: 70px;
 }
 
 ::-webkit-scrollbar {
@@ -77,6 +76,18 @@ footer {
 
   .block-container {
     max-width: 80%;
+  }
+
+  #start {
+    flex-direction: column;
+  }
+  #start .social-logo {
+    margin-top: 20px;
+    width: 70px;
+  }
+  #start .lang-logo {
+    margin-top: 40px;
+    width: 70px;
   }
 }
 
