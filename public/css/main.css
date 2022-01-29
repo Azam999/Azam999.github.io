@@ -12,10 +12,12 @@
 }
 #main-start #photoContainer #photo {
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50px;
   border: solid 2px black;
   width: 30vh;
   height: 30vh;
+  background: #1ea9ff;
+  box-shadow: 33px 33px 66px #2481bb, -33px -33px 66px #23c2ff;
 }
 
 #top #name {
