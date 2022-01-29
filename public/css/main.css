@@ -1,28 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500&display=swap");
-.navbar-default {
-  background-color: #1ea9ff;
-}
-.navbar-default .navbar-brand {
-  color: black;
-  font-family: "Source Code Pro", monospace;
-  font-weight: 500;
-}
-.navbar-default .nav-item {
-  margin-right: 12px;
-  border-radius: 10%;
-  padding: 0px 10px;
-  color: black;
-  transition: 0.3s;
-}
-.navbar-default .nav-item .nav-link {
-  color: black;
-  font-family: "Source Code Pro", monospace;
-  font-weight: 300;
-}
-.navbar-default .nav-item:hover {
-  background-color: #0091ea;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 #main-start {
   background-color: #1ea9ff;
   display: block;
@@ -33,33 +10,6 @@
 #main-start .container {
   height: 50vh;
 }
-#main-start #info #description {
-  text-align: center;
-  width: 30vw;
-  font-size: 20px;
-  font-family: monospace;
-}
-#main-start #info #name {
-  font-family: monospace;
-}
-#main-start #info #langs {
-  display: flex;
-  flex-direction: row;
-}
-#main-start #info #langs .lang-logo {
-  width: 70px;
-  margin-right: 16px;
-  border-radius: 10%;
-  transition: 0.3s;
-}
-#main-start #info #langs .lang-logo:hover {
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-#main-start #info #socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 #main-start #photoContainer #photo {
   object-fit: cover;
   border-radius: 50%;
@@ -68,38 +18,6 @@
   height: 30vh;
 }
 
-@media only screen and (max-width: 992px) {
-  #main-start {
-    height: 100vh;
-  }
-  #main-start .container {
-    height: 100vh;
-  }
-
-  #description {
-    width: 80vw !important;
-  }
-
-  #photo {
-    margin-bottom: 40px;
-  }
-
-  .navbar-nav {
-    margin-top: 10px;
-  }
-  .navbar-nav .nav-item {
-    border-radius: 0% !important;
-    padding-left: 10px;
-  }
-}
-@media only screen and (max-height: 600px) {
-  #main-start {
-    height: 100vh;
-  }
-  #main-start .container {
-    height: 100vh;
-  }
-}
 #top #name {
   font-weight: 800;
   font-size: 60px;
@@ -108,6 +26,57 @@
 #top #title {
   font-size: 24px;
   text-align: center;
+  font-family: monospace;
+}
+
+.block-container {
+  max-width: 40%;
+  margin: auto;
+}
+.block-container .card {
+  padding: 30px;
+  border-radius: 30px;
+  background: #f0f0f0;
+  box-shadow: 25px 25px 50px #bebebe, -25px -25px 50px #ffffff;
+}
+.block-container .card .sub-title {
+  font-family: "Press Start 2P", cursive;
+}
+.block-container .card .sub-text {
+  font-family: monospace;
+}
+
+footer {
+  font-family: monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0061cf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00418b;
+}
+
+@media only screen and (max-width: 1140px) {
+  #main-start {
+    height: 100vh;
+  }
+  #main-start .container {
+    height: 100vh;
+  }
+
+  .block-container {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

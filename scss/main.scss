@@ -1,34 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 $background-color: rgb(30, 169, 255);
-
-.navbar-default {
-  background-color: $background-color;
-
-  .navbar-brand {
-    color: black;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 500;
-  }
-
-  .nav-item {
-    margin-right: 12px;
-    border-radius: 10%;
-    padding: 0px 10px;
-    color: black;
-    transition: 0.3s;
-
-    .nav-link {
-      color: black;
-      font-family: 'Source Code Pro', monospace;
-      font-weight: 300;
-    }
-
-    &:hover {
-      background-color: darken($background-color, $amount: 10%);
-    }
-  }
-}
 
 #main-start {
   background-color: $background-color;
@@ -39,41 +12,6 @@ $background-color: rgb(30, 169, 255);
 
   .container {
     height: 50vh;
-  }
-
-  #info {
-    #description {
-      text-align: center;
-      width: 30vw;
-      font-size: 20px;
-      font-family: monospace;
-    }
-
-    #name {
-      font-family: monospace;
-    }
-
-    #langs {
-      display: flex;
-      flex-direction: row;
-
-      .lang-logo {
-        width: 70px;
-        margin-right: 16px;
-        border-radius: 10%;
-        transition: 0.3s;
-        
-        &:hover {
-          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        }
-      }
-    }
-
-    #socials {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
   }
 
   #photoContainer {
@@ -87,40 +25,6 @@ $background-color: rgb(30, 169, 255);
   }
 }
 
-@mixin responsive {
-  #main-start {
-    height: 100vh;
-
-    .container {
-      height: 100vh;
-    }
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  @include responsive;
-  #description {
-    width: 80vw !important;
-  }
-
-  #photo {
-    margin-bottom: 40px;
-  }
-
-  .navbar-nav {
-    margin-top: 10px;
-
-    .nav-item {
-      border-radius: 0% !important;
-      padding-left: 10px;
-    }
-  }
-}
-
-@media only screen and (max-height: 600px) {
-  @include responsive;
-}
-
 #top {
   #name {
     font-weight: 800;
@@ -130,5 +34,67 @@ $background-color: rgb(30, 169, 255);
   #title {
     font-size: 24px;
     text-align: center;
+    font-family: monospace;
   }
+}
+
+.block-container {
+  max-width: 40%;
+  margin: auto;
+
+  .card {
+    padding: 30px;
+    border-radius: 30px;
+    background: #f0f0f0;
+    box-shadow:  25px 25px 50px #bebebe,
+             -25px -25px 50px #ffffff;
+
+    .sub-title {
+      font-family: 'Press Start 2P', cursive;
+    }
+  
+    .sub-text {
+      font-family: monospace;
+    }
+  }
+}
+
+footer {
+  font-family: monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 97, 207); 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 65, 139); 
+}
+
+@mixin responsive {
+  #main-start {
+    height: 100vh;
+
+    .container {
+      height: 100vh;
+    }
+  }
+
+  .block-container {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  @include responsive;
 }
