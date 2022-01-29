@@ -98,6 +98,23 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  @include responsive;
+  #start {
+    flex-direction: column;
+
+    .social-logo {
+      margin-top: 20px;
+      width: 90px;
+    }
+
+    .lang-logo {
+      margin-top: 40px;
+      width: 90px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1140px) {
   @include responsive;
 
@@ -113,5 +130,31 @@ footer {
       margin-top: 40px;
       width: 70px;
     }
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  @include responsive;
+
+  #start {
+    flex-direction: column;
+
+    .social-logo {
+      margin-top: 20px;
+      width: 50px;
+    }
+
+    .lang-logo {
+      margin-top: 40px;
+      width: 50px;
+    }
+  }
+
+  #name {
+    font-size: 30px !important;
+  }
+
+  #title {
+    font-size: 18px !important;
   }
 }
