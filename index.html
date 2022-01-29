@@ -50,15 +50,7 @@
     <meta name="twitter:image" content="https://azamahmed.tech/img/azam.jpeg" />
     <meta name="twitter:url" content="https://azamahmed.tech" />
 
-    <!-- Apple Meta -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta
-      name="apple-mobile-web-app-title"
-      content="Azam Ahmed Personal Website"
-    />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="theme-color" content="#1ea9ff">
 
     <link rel="icon" href="img/space-invader-icon.png" />
 
@@ -82,7 +74,7 @@
   <body>
     <div id="main-start" class="p-4">
       <div id="top" data-aos="zoom-in-up">
-        <h1 id="name">Azam Ahmed</h1>
+        <h1 id="name" >Azam Ahmed</h1>
         <h2 id="title">Developer in High School</h2>
       </div>
 
@@ -172,7 +164,7 @@
       </div>
     </div>
 
-    <div class="block-container mt-5 mb-5">
+    <div class="block-container mt-5">
       <div class="card mt-5" data-aos="slide-up">
         <h3 class="sub-title">About</h3>
         <p class="sub-text">
@@ -216,9 +208,9 @@
       </div>
     </div>
 
-    <footer class="mt-5">
-      <div class="d-flex justify-content-end me-3">
-        <div class="footer-text">
+    <footer class="mt-5" >
+      <div class="text-end me-3">
+        <div>
           <p>Created by <b>Azam</b></p>
         </div>
       </div>
@@ -234,17 +226,16 @@
     </script>
     <script>
       AOS.init({
-        duration: 1000,
+        duration: 1500,
         offset: 70,
       });
     </script>
 
     <script>
-      var app = document.getElementById('name');
+      var name = document.getElementById('name');
 
-      var typewriter = new Typewriter(app, {
+      var typewriter = new Typewriter(name, {
         loop: true,
-        delay: 75,
       });
 
       typewriter
