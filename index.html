@@ -17,10 +17,12 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
     <div id="main-start" class="p-4">
-      <div id="top">
+      <div id="top" data-aos="zoom-in-up">
         <h1 id="name">Azam Ahmed</h1>
         <h2 id="title">Developer in High School</h2>
       </div>
@@ -32,7 +34,7 @@
           align-items-center
         "
       >
-        <div>
+        <div data-aos="slide-left">
           <a
             href="https://www.linkedin.com/in/azam-ahmed-5185b7226/"
             target="_blank"
@@ -56,10 +58,10 @@
             <img src="https://img.icons8.com/ios/96/000000/mail.png" />
           </a>
         </div>
-        <div id="photoContainer" class="mt-5">
+        <div id="photoContainer" class="mt-5" data-aos="flip-up">
           <img id="photo" src="img/azam.jpeg" />
         </div>
-        <div id="langs">
+        <div id="langs" data-aos="slide-right">
           <img
             class="lang-logo"
             src="https://img.icons8.com/color/96/000000/javascript--v2.png"
@@ -82,19 +84,10 @@
           />
         </div>
       </div>
-
-      <script>
-        var tooltipTriggerList = [].slice.call(
-          document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        );
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-      </script>
     </div>
 
     <div class="block-container mt-5">
-      <div class="card mt-5">
+      <div class="card mt-5" data-aos="slide-up">
         <h3 class="sub-title">About</h3>
         <p class="sub-text">
           Hey! I'm Azam, a sophomore in high school who is interested in coding,
@@ -103,15 +96,20 @@
           use JavaScript, Python, Java, and Flutter.
         </p>
       </div>
-      <div class="card mt-5">
+      <div class="card mt-5" data-aos="slide-up">
         <h3 class="sub-title">Projects</h3>
         <p class="sub-text">
           <b>Stox:</b> A command-line interface (CLI) to get stock market data
           and practice trading/investing.
-          <br>
-          <br>
+          <br />
+          <br />
           View more projects
-          <a href="https://github.com/Azam999?tab=repositories" target="_blank" class="text-decoration-none">here</a>
+          <a
+            href="https://github.com/Azam999?tab=repositories"
+            target="_blank"
+            class="text-decoration-none"
+            >here</a
+          >
         </p>
       </div>
     </div>
@@ -123,5 +121,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
