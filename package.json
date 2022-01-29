@@ -1,7 +1,7 @@
 {
   "name": "azam999.github.io",
   "version": "1.0.0",
-  "description": "[Link](http://azamahmed.tech)",
+  "description": "Azam Ahmed - Personal Website",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch scss:public/css"
