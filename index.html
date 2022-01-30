@@ -35,7 +35,7 @@
       property="og:description"
       content="Azam is in high school and is interested in coding, investing, and entrepreneurship. I enjoy full-stack web development and machine learning."
     />
-    <meta property="og:image" content="https://azamahmed.tech/img/azam.jpeg" />
+    <meta property="og:image" content="https://azamahmed.tech/img/azam.jpg" />
     <meta property="og:url" content="https://azamahmed.tech" />
     <meta property="og:type" content="website" />
 
@@ -47,10 +47,10 @@
       name="twitter:description"
       content="Azam is in high school and is interested in coding, investing, and entrepreneurship. I enjoy full-stack web development and machine learning."
     />
-    <meta name="twitter:image" content="https://azamahmed.tech/img/azam.jpeg" />
+    <meta name="twitter:image" content="https://azamahmed.tech/img/azam.jpg" />
     <meta name="twitter:url" content="https://azamahmed.tech" />
 
-    <meta name="theme-color" content="#1ea9ff">
+    <meta name="theme-color" content="#1ea9ff" />
 
     <link rel="icon" href="img/space-invader-icon.png" />
 
@@ -74,7 +74,7 @@
   <body>
     <div id="main-start" class="p-4">
       <div id="top" data-aos="zoom-in-up">
-        <h1 id="name" >Azam Ahmed</h1>
+        <h1 id="name">Azam Ahmed</h1>
         <h2 id="title">Developer in High School</h2>
       </div>
 
@@ -137,7 +137,7 @@
           </a>
         </div>
         <div id="photoContainer" class="mt-5" data-aos="flip-up">
-          <img id="photo" src="img/azam.jpeg" />
+          <img id="photo" src="img/azam.jpg" />
         </div>
         <div id="langs" data-aos="slide-right">
           <img
@@ -208,7 +208,7 @@
       </div>
     </div>
 
-    <footer class="mt-5" >
+    <footer class="mt-5">
       <div class="text-end me-3">
         <div>
           <p>Created by <b>Azam</b></p>
@@ -232,10 +232,11 @@
     </script>
 
     <script>
-      var name = document.getElementById('name');
+      var el = document.getElementById('name');
 
-      var typewriter = new Typewriter(name, {
+      var typewriter = new Typewriter(el, {
         loop: true,
+        delay: 75
       });
 
       typewriter
