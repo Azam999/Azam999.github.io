@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+html, body {
+  max-width: 100%;
+  // overflow-x: hidden;
+}
+
 
 $background-color: #1ea9ff;
 
